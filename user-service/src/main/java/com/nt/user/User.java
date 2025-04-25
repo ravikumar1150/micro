@@ -12,6 +12,14 @@ public class User {
 	Integer id;
 	String name;
 	String eMail;
+	
+	
+	public User(Integer id, String name, String eMail) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.eMail = eMail;
+	}
 	public Integer getId() {
 		return id;
 	}
