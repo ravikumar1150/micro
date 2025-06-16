@@ -29,5 +29,9 @@ public interface UserRepo extends JpaRepository<User, Integer> {
 	public Integer updateUserName(@Param("newName") String name,
 			                      @Param("oldName") String oldName,
 			                      @Param("id")Integer id);
+	@Modifying
+	@Transactional
+	@Query("delete from User u where u.name= :name")
+	public Integer deleteUser(@Param("name") String name);
 
 }

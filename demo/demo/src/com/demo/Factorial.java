@@ -1,29 +1,42 @@
 package com.demo;
 
-public class Demo {
+public class Factorial {
+	static void factorial(int n) {
+        
+		
+	long startTime = System.currentTimeMillis();
+		for(int i=1;i*i<=n;i++) {
+			
+			if(n%i==0) {
+				
+		         System.out.print(i+" ");
+		         
+		         if(i !=n/i ) {
+		        	 
+		        	 System.out.print((n/i)+" ");
+		         }
+				
+			}
+					
+		}
 
-	    public static void main(String[] args) {
-	        int[] arr = {1, 5, 2, 6, 7, 10, 0, 4};
-	        
-	        int[] result = new int[arr.length];
-
-	        for (int i = 0; i < arr.length; i++) {
-	            int nextGreater = -1;
-	            for (int j = i + 1; j < arr.length; j++) {
-	                if (arr[j] > arr[i]) {
-	                    nextGreater = arr[j];
-	                    break;
-	                }
-	            }
-	            result[i] = nextGreater;
-	        }
-
-	        // Print the result
-	        for (int num : result) {
-	            System.out.print(num + " ");
-	        }
-	    }
+		System.out.println();
+		long endTime = System.currentTimeMillis();
+																													
+		System.out.println(startTime-endTime);
+																																			
+		
 	}
-
-
-
+	public static void main(String[] args) {
+		
+		
+		factorial(12);
+		
+		
+	}
+		
+		
+	
+		
+	
+}
