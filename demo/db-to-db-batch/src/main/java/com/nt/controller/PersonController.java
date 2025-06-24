@@ -22,6 +22,8 @@ public class PersonController {
 
     @GetMapping("/job")
     public String startJob() {
+
+        System.out.println("git remote modyfy");
         try {
             JobParameters jobParameters = new JobParametersBuilder()
                     .addLong("time", System.currentTimeMillis())
