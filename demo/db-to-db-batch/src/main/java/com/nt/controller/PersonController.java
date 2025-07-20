@@ -34,7 +34,12 @@ public class PersonController {
 
     @GetMapping("/job")
     public String startJob() {
-    	System.out.print("pathc recor");
+ new_feature-16-06-mailsendar
+    	
+  
+
+        System.out.println("git remote modyfy");
+ master
         try {
         
             JobParameters jobParameters = new JobParametersBuilder()
